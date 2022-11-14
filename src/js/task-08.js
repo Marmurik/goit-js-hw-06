@@ -8,7 +8,7 @@ const elements = event.currentTarget.elements;
 const email = elements.email.value;
 const password = elements.password.value;
 
-if (email.length === '' || password.length === '') {
+if (elements.email.value === '' || elements.password.value === '') {
     return alert ('всі поля повинні бути заповнені');
 } 
 
@@ -18,5 +18,5 @@ if (email.length === '' || password.length === '') {
     };
     
     console.log(formData);
-    loginFormEl.reset ();
+    loginFormEl.reset();
 }
